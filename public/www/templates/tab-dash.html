@@ -1,0 +1,32 @@
+<ion-view view-title="Dashboard" class="bgd-color">
+  <ion-content class="">
+  <!-- ng-click="goArea()" -->
+    <div class="wrapper" >
+      <div class="container">
+        <div class="top-content">
+          <!--<p class="tap-to-enter">Tap to Enter</p>-->
+          <div class="homescreen-logo">
+        </div>
+     
+        <div class="login-screen">
+        <div class="credentials">
+         <div>
+           <span><label for="username">Username</label></span>
+           <span><input type="text" ng-model="user.uname" name="username" id="username"></span>
+         </div>
+         <div >
+           <span><label for="password">Password</label></span>
+           <span><input type="text" ng-model="user.pwd" name="password" id="password"></span>
+         </div>
+         </div>
+          <div ng-show="isShow">Please enter correct credentials</div>
+         <div class="submit">
+           <input type="button" class="submit-btn" value="Sign in" ng-click="goArea()" name="signin">
+         </div>
+        </div>
+        </div>
+        </div>
+      </div> 
+    </div>      
+  </ion-content>
+</ion-view>
